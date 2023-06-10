@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import math
-from sklearn importlinear_model
+from sklearn import linear_model
 
 df = pd.read_csv('homeprices.csv')
 bed_median = math.floor(df.bedrooms.median())
