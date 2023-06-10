@@ -13,4 +13,4 @@ reg.fit(df[['area','bedrooms','age']],df.price)
 reg.coef_
 reg.intercept_
 
-reg.predict([4000,3,35]
+reg.predict([[4000,3,35]])
