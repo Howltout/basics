@@ -5,7 +5,7 @@ from sklearn import linear_model
 
 df = pd.read_csv('homeprices.csv')
 bed_median = math.floor(df.bedrooms.median())
-df.bedrooms = df.bedrooms.filna(bed_median)
+df.bedrooms = df.bedrooms.filna(bed_median, inplace = True)
 
 reg = linear_model.LinearRegression()
 reg.fit(df[['area','bedrooms','age']],df.price)
